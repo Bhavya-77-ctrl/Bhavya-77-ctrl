@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="Human-Robot Collaboration — IEEE ICAISS 2026">
+<style>
+@keyframes sweep{0%{transform:translateX(-120px)}60%,100%{transform:translateX(720px)}}
+@keyframes live{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes pulseRing{0%{r:4;opacity:1}100%{r:16;opacity:0}}
+.sweep{animation:sweep 6s ease-in-out infinite}
+.live{animation:live 1.6s ease-in-out infinite}
+.pr{animation:pulseRing 2s cubic-bezier(0,0.2,0.8,1) infinite}
+.card{transition:all .3s ease;cursor:pointer}
+.card:hover{stroke:#7c3aed;filter:drop-shadow(0 0 10px rgba(124,58,237,0.2))}
+</style>
+<defs>
+<linearGradient id="shineVL" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed" stop-opacity="0"/><stop offset=".5" stop-color="#7c3aed" stop-opacity=".06"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></linearGradient>
+<clipPath id="c2"><rect x="1" y="1" width="598" height="208" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#c2)">
+  <rect width="600" height="210" fill="#ffffff"/>
+  <rect class="sweep" x="0" y="0" width="120" height="210" fill="url(#shineVL)"/>
+  <rect x="28" y="0" width="80" height="2" fill="#7c3aed"/>
+</g>
+<rect class="card" x="0.5" y="0.5" width="599" height="209" rx="18" fill="none" stroke="#e2e8f0"/>
+
+<!-- Title -->
+<text x="28" y="50" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="25" font-weight="400" letter-spacing="-0.3" fill="#0f172a">Human-Robot HRI</text>
+
+<!-- Multimodal Sensor Pulse -->
+<g transform="translate(345, 34)">
+  <circle class="pr" cx="12" cy="10" r="10" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+  <circle cx="12" cy="10" r="4" fill="#7c3aed"/>
+  <text x="28" y="14" font-family="ui-monospace, monospace" font-size="10.5" fill="#7c3aed">VOICE + GESTURE</text>
+</g>
+
+<!-- Status Pill -->
+<rect x="470" y="30" width="104" height="26" rx="13" fill="#faf5ff" stroke="#7c3aed" stroke-opacity="0.4"/>
+<circle class="live" cx="484" cy="43" r="3" fill="#7c3aed"/>
+<text x="494" y="47.5" font-family="ui-monospace, monospace" font-size="11" font-weight="600" fill="#7c3aed">IEEE ICAISS</text>
+
+<!-- Description -->
+<text y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#475569">
+<tspan x="28" dy="0">Novel multimodal framework bridging speech acoustic commands and</tspan>
+<tspan x="28" dy="22">real-time vision gesture recognition for accessible robot collaboration.</tspan>
+</text>
+
+<!-- Tech Badges -->
+<rect x="28" y="142" width="112" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="84" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#6b21a8">Multimodal AI</text>
+<rect x="148" y="142" width="122" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="209" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#6b21a8">Computer Vision</text>
+<rect x="278" y="142" width="102" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="329" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#6b21a8">Robotics HRI</text>
+<rect x="388" y="142" width="98" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="437" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#6b21a8">Speech Rec</text>
+<rect x="494" y="142" width="80" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="534" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#6b21a8">PyTorch</text>
+</svg>
