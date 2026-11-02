@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="Quantum &amp; Genomic AI — IEEE I-SMAC &amp; ICE2CPT">
+<style>
+@keyframes sweep{0%{transform:translateX(-120px)}60%,100%{transform:translateX(720px)}}
+@keyframes live{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes rotQ{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.sweep{animation:sweep 6s ease-in-out infinite}
+.live{animation:live 1.6s ease-in-out infinite}
+.spinQ{animation:rotQ 8s linear infinite;transform-origin:center}
+.card{transition:all .3s ease;cursor:pointer}
+.card:hover{stroke:#0284c7;filter:drop-shadow(0 0 10px rgba(2,132,199,0.2))}
+</style>
+<defs>
+<linearGradient id="shineBL" x1="0" x2="1"><stop offset="0" stop-color="#0284c7" stop-opacity="0"/><stop offset=".5" stop-color="#0284c7" stop-opacity=".06"/><stop offset="1" stop-color="#0284c7" stop-opacity="0"/></linearGradient>
+<clipPath id="c3"><rect x="1" y="1" width="598" height="208" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#c3)">
+  <rect width="600" height="210" fill="#ffffff"/>
+  <rect class="sweep" x="0" y="0" width="120" height="210" fill="url(#shineBL)"/>
+  <rect x="28" y="0" width="80" height="2" fill="#0284c7"/>
+</g>
+<rect class="card" x="0.5" y="0.5" width="599" height="209" rx="18" fill="none" stroke="#e2e8f0"/>
+
+<!-- Title -->
+<text x="28" y="50" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="25" font-weight="400" letter-spacing="-0.3" fill="#0f172a">Quantum &amp; Bio AI</text>
+
+<!-- Live Indicator -->
+<g transform="translate(345, 33)">
+  <g class="spinQ" transform="translate(10, 10)">
+    <ellipse cx="0" cy="0" rx="9" ry="3.5" fill="none" stroke="#0284c7" stroke-width="1.2"/>
+    <ellipse cx="0" cy="0" rx="3.5" ry="9" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="2.5" fill="#0284c7"/>
+  </g>
+  <text x="28" y="14" font-family="ui-monospace, monospace" font-size="10.5" fill="#0284c7">GENE + Q-NET</text>
+</g>
+
+<!-- Status Pill -->
+<rect x="466" y="30" width="108" height="26" rx="13" fill="#f0f9ff" stroke="#0284c7" stroke-opacity="0.4"/>
+<circle class="live" cx="480" cy="43" r="3" fill="#0284c7"/>
+<text x="490" y="47.5" font-family="ui-monospace, monospace" font-size="11" font-weight="600" fill="#0284c7">IEEE Verified</text>
+
+<!-- Description -->
+<text y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#475569">
+<tspan x="28" dy="0">Hybrid machine learning models for early cancer gene detection and</tspan>
+<tspan x="28" dy="22">adaptive routing optimization across quantum communication networks.</tspan>
+</text>
+
+<!-- Tech Badges -->
+<rect x="28" y="142" width="102" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="79" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#0369a1">Quantum ML</text>
+<rect x="138" y="142" width="128" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="202" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#0369a1">Gene Anomaly DL</text>
+<rect x="274" y="142" width="112" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="330" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#0369a1">Bioinformatics</text>
+<rect x="394" y="142" width="104" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="446" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#0369a1">Metaheuristics</text>
+<rect x="506" y="142" width="68" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="540" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#0369a1">Python</text>
+</svg>
