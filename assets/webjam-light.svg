@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="Full-Stack Web Innovation — Winner WebJam 2026">
+<style>
+@keyframes sweep{0%{transform:translateX(-120px)}60%,100%{transform:translateX(720px)}}
+@keyframes live{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes goldPulse{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+.sweep{animation:sweep 6s ease-in-out infinite}
+.live{animation:live 1.6s ease-in-out infinite}
+.trophy{animation:goldPulse 2s ease-in-out infinite;transform-origin:center}
+.card{transition:all .3s ease;cursor:pointer}
+.card:hover{stroke:#d97706;filter:drop-shadow(0 0 10px rgba(217,119,6,0.2))}
+</style>
+<defs>
+<linearGradient id="shineGL" x1="0" x2="1"><stop offset="0" stop-color="#d97706" stop-opacity="0"/><stop offset=".5" stop-color="#d97706" stop-opacity=".06"/><stop offset="1" stop-color="#d97706" stop-opacity="0"/></linearGradient>
+<clipPath id="c4"><rect x="1" y="1" width="598" height="208" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#c4)">
+  <rect width="600" height="210" fill="#ffffff"/>
+  <rect class="sweep" x="0" y="0" width="120" height="210" fill="url(#shineGL)"/>
+  <rect x="28" y="0" width="80" height="2" fill="#d97706"/>
+</g>
+<rect class="card" x="0.5" y="0.5" width="599" height="209" rx="18" fill="none" stroke="#e2e8f0"/>
+
+<!-- Title -->
+<text x="28" y="50" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="25" font-weight="400" letter-spacing="-0.3" fill="#0f172a">WebJam 2026</text>
+
+<!-- Trophy / Winner Badge -->
+<g transform="translate(340, 32)">
+  <g class="trophy" transform="translate(10, 10)">
+    <path d="M-6 -6 H6 V0 C6 4 3 7 0 7 C-3 7 -6 4 -6 0 Z" fill="#d97706"/>
+    <path d="M-8 -4 H-6 V-1 H-8 Z M6 -4 H8 V-1 H6 Z" fill="#d97706"/>
+    <rect x="-1.5" y="7" width="3" height="4" fill="#d97706"/>
+    <rect x="-4" y="11" width="8" height="2" fill="#d97706"/>
+  </g>
+  <text x="28" y="14" font-family="ui-monospace, monospace" font-size="10.5" font-weight="600" fill="#b45309">1ST PLACE</text>
+</g>
+
+<!-- Status Pill -->
+<rect x="466" y="30" width="108" height="26" rx="13" fill="#fffbeb" stroke="#d97706" stroke-opacity="0.4"/>
+<circle class="live" cx="480" cy="43" r="3" fill="#d97706"/>
+<text x="490" y="47.5" font-family="ui-monospace, monospace" font-size="11" font-weight="600" fill="#b45309">IEEE Winner</text>
+
+<!-- Description -->
+<text y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#475569">
+<tspan x="28" dy="0">Winner of the Technical &amp; Creative Web Development Event at</tspan>
+<tspan x="28" dy="22">WebJam 2026, engineering reactive, component-driven user interfaces.</tspan>
+</text>
+
+<!-- Tech Badges -->
+<rect x="28" y="142" width="84" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="70" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#92400e">React.js</text>
+<rect x="120" y="142" width="80" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="160" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#92400e">Node.js</text>
+<rect x="208" y="142" width="128" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="272" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#92400e">JavaScript (ES6+)</text>
+<rect x="344" y="142" width="104" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="396" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#92400e">HTML5 &amp; CSS3</text>
+<rect x="456" y="142" width="94" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/><text x="503" y="159" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11.5" fill="#92400e">REST APIs</text>
+</svg>
